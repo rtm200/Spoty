@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+body{
+background: url('img.jpg');
+ background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    transition: 1s ease-in-out;
+}
+.tom{
+	color: yellow;
+	font-weight: 800;
+	text-shadow: 0 0 10px black;
+	cursor: pointer;
+}
+.green{
+	color: #5EFF33;
+	font-weight: 800;
+}
+nav{
+	justify-content: space-between;
+	display: flex;
+	background-color:rgba(0,0,0,0.7);
+	
+}
+nav h3{
+	margin: 30px 50px;
+	margin-right:0; 
+	color: white;
+	font-size: 1.6rem; 
+	text-align: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.5s;
+}
+nav h3:hover{
+	color: #5EFF33;
+}
+nav ul{
+	padding: 30px 50px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+nav ul li{
+	list-style: none;
+	margin-left: 20px; 
+	text-align: center;
+	align-items: center;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem; 
+	transition: 0.5s;
+}
+nav ul li a:hover{
+	color: #5EFF33;
+}
+
+.main{
+	position: relative;
+	display: flex;
+}
+.main .big-text{
+	margin: 0 50px;
+	margin-top: 100px;
+}
+.main .big-text h2{
+	font-size: 4rem;
+	color: white;
+	font-weight: 800;
+	line-height: 1.3;
+}
+.main .big-text p{
+	color: white;
+	margin-bottom: 40px;
+	font-weight: 800;
+}
+.main .big-text button{
+	background: green;
+	color: white;
+	border: 2px solid green;
+	padding: 10px 20px;
+	border-radius: 8px; 
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: .5s;
+}
+.main .big-text button:hover{
+	background: #3FA125;;
+	border: 2px solid #3FA125;
+}
+.main .big-text .rating{
+	font-size: 13px;
+	color: white;
+	font-weight: 600;
+}
+.play{
+	height: 100px;
+	width: 100px;
+	background-color: #3FA125;
+	position: absolute;
+	bottom: -50px;
+	right: 250px;
+	border-radius: 50%;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.play:hover{
+	box-shadow: 0px 0px 20px #3FA125;
+}
+.icon{
+	position: absolute;
+	color: white;
+	font-size: 2.2rem;
+	top: 50%;
+	left: 52%;
+	transform: translate(-50%,-52%);
+}
+@media (max-width:960px){
+	.play{
+	right: 50px;
+	bottom: 50px;
+	}
+}
+@media (max-width:650px){
+	.play{
+	height: 50px;
+	width: 50px;
+	right: 70px;
+	bottom: 70px;
+
+	}
+	.icon{
+	font-size: 1rem;
+	}
+}

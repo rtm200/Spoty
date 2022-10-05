@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spoty</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body id="body">
+	<nav>
+		<h3 onclick="myfunc()">Spoty</h3>
+	<ul>
+		<li><a href="#">Pricing</a></li>
+		<li><a href="#">Create account</a></li>
+	</ul>
+	</nav>
+<div class="main">
+
+	<div class="big-text">
+		<h2>Stop Wasting your time,<br>
+			Listen to <span class="green">music</span>.
+		</h2>
+		<p>Spoty is a FREE Platform for you to listen to music.</p>
+		<button>Join Now</button>
+		<p class="rating">★★★★☆ 4.8 on <span class="tom" onclick="copy()" >TomatoPotato</span> | 3051 reviews</p>
+	</div>
+	<div class="play">
+		<div class="icon"><i class="fa fa-play"></i></div>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+	function copy() {
+		value = "TomatoPotato"
+		navigator.clipboard.writeText(value).then(() => {
+			alert("Text Copied!!")
+		});
+	}
+
+
+	var i=0;
+	var bg = Array("url(dark.jpg)","url(img.jpg)");
+	function myfunc(){
+		document.body.style.backgroundImage=bg[i];
+		i++;
+		if (i>bg.length) {
+			i=0;
+			setTimeout("myfunc()", 5);
+		}
+	}
+
+</script>
+</html>
